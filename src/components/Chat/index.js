@@ -34,9 +34,10 @@ class Chat extends Component {
     this.state.socket.on("hey", (data) => {
       this.setState({caller:data.from});
       this.setState({callerSignal:data.signal});
+      let author = this.state.users.filter(e=>e.id==data.from)[0].login;
       let date = new Date();
       let id = Math.random().toString(36).substring(2, 7) + Math.random().toString(36).substring(2, 7);
-      this.setState({messages:[...this.state.messages, {id:id, author:this.state.login, msg:'Вам звонит ', time:date, type:true}]})
+      this.setState({messages:[...this.state.messages, {id:id, author:author, msg:'Вам звонит ', time:date, type:true}]})
     });
 
     this.state.socket.on('sendMsg', data=>{

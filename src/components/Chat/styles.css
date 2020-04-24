@@ -1,0 +1,136 @@
+
+body {
+    background: #222 url('https://unsplash.it/1920/1080/?random') no-repeat;
+}
+
+small{
+  margin-left: 20px;
+}
+.page-header {
+  background: #006A4E;
+  margin: 0;
+  padding: 20px 0 10px;
+  color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  z-index: 1
+}
+.main {
+  height: 100vh;
+  padding-top: 70px;
+}
+
+.chat-log {
+  padding: 40px 0 14px;
+  height: auto;
+  overflow: auto;
+}
+.chat-log__item {
+  text-overflow: clip ;
+  overflow:hidden;
+  background: #fafafa;
+  padding: 10px;
+  margin: 0 auto 20px;
+  max-width: 80%;
+  float: left;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  clear: both;
+}
+
+.chat-log__item.chat-log__item--own {
+  float: right;
+  background: #DCF8C6;
+  text-align: right;
+}
+
+.chat-form {
+
+  height:12%;
+  max-height:120px;
+  background: #2b2b2b;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+}
+
+.chat-log__author {
+  margin: 0 auto .5em;
+  font-size: 14px;
+  font-weight: bold;
+}
+.chat{
+
+  height:100%;
+  width:59.5%;
+}
+li {
+    list-style-type: none;
+   }
+
+   .smallChat{
+     max-height:39%;
+   }
+   .bigChat{
+     max-height:80.5%;
+   }
+.chatBack{
+  background:rgba(0,0,0,.7);
+  left: 0;
+  bottom:12%;
+  right: 0;
+  position:absolute;
+  overflow: auto;
+}
+.users_list{
+  position: absolute;
+  height: 41.5%;
+  min-width: 100px;
+  width: 10%;
+  background:rgba(0,0,0,.7);
+  overflow: auto;
+}
+.call_input{
+   width:25px;
+   margin-left: 5px;
+}
+
+.video{
+  background:rgba(0,0,0,.7);
+  position:fixed;
+  width:100%;
+  max-height:41.5%;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+.myVideo{
+  min-width: 100px;
+  min-height:100px;
+  width: 20vw;
+  right: 0;
+  position: fixed;
+}
+.disconnectButton{
+  width: 20%;
+  right: 0;
+  top:18.5vw;
+  min-top:100px;
+  position: absolute;
+}
+.partnerVideo{
+  min-width: 100px;
+  min-height:100px;
+  height:50%;
+  max-height: 400px;
+
+}
+
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 10px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}

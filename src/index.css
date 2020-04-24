@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #222 url('https://unsplash.it/1920/1080/?random') no-repeat;
+}
+.form-holder{
+  margin-top:30vh;
+}
